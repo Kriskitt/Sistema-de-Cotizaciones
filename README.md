@@ -11,8 +11,6 @@ Aplicación web para gestionar y solicitar cotizaciones. Incluye acceso por role
 - Bootstrap 5
 - Bootstrap Icons
 
-Nota de migración: la aplicación fue migrada desde una versión estática en HTML, CSS y JavaScript a una aplicación Angular con componentes standalone, Angular Router, servicios, Signals y formularios reactivos.
-
 ## Requisitos
 
 - Node.js v23.11.0
@@ -47,8 +45,8 @@ npm test
 
 ## Autores
 
-Marco Antonio Fernández Herrera – U202512345
-Daniel Felix Huayta Delgado – U202324024
-Geraldine Andrea Landeo Rengifo – U202320944
-Cristian Enrique Palacios Madalengoitia – U20231D298
-Romario Quispe Halire – U20241B624
+- Marco Antonio Fernández Herrera – U202512345
+- Daniel Felix Huayta Delgado – U202324024
+- Geraldine Andrea Landeo Rengifo – U202320944
+- Cristian Enrique Palacios Madalengoitia – U20231D298
+- Romario Quispe Halire – U20241B624
