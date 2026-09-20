@@ -1,0 +1,47 @@
+import { Routes } from '@angular/router';
+import { LoginComponent } from './pages/auth/login.component';
+import { RegisterComponent } from './pages/auth/register.component';
+import { RecoverPasswordComponent } from './pages/auth/recover-password.component';
+import { AdminDashboardComponent } from './pages/admin/admin-dashboard.component';
+import { AdminQuotationsComponent } from './pages/admin/admin-quotations.component';
+import { AdminQuotationDetailComponent } from './pages/admin/admin-quotation-detail.component';
+import { AdminUsersComponent } from './pages/admin/admin-users.component';
+import { AdminEditUserComponent } from './pages/admin/admin-edit-user.component';
+import { AdminReportsComponent } from './pages/admin/admin-reports.component';
+import { ClientDashboardComponent } from './pages/client/client-dashboard.component';
+import { ClientQuotationsComponent } from './pages/client/client-quotations.component';
+import { ClientQuotationDetailComponent } from './pages/client/client-quotation-detail.component';
+import { RequestQuotationComponent } from './pages/client/request-quotation.component';
+import { VendorDashboardComponent } from './pages/vendor/vendor-dashboard.component';
+
+export const routes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'registro', component: RegisterComponent },
+  { path: 'recuperar-password', component: RecoverPasswordComponent },
+  { path: 'admin/dashboard', component: AdminDashboardComponent },
+  { path: 'admin/cotizaciones', component: AdminQuotationsComponent },
+  { path: 'admin/cotizaciones/detalle', component: AdminQuotationDetailComponent },
+  { path: 'admin/usuarios', component: AdminUsersComponent },
+  { path: 'admin/usuarios/editar', component: AdminEditUserComponent },
+  { path: 'admin/reportes', component: AdminReportsComponent },
+  { path: 'cliente/dashboard', component: ClientDashboardComponent },
+  { path: 'cliente/mis-cotizaciones', component: ClientQuotationsComponent },
+  { path: 'cliente/cotizaciones/detalle', component: ClientQuotationDetailComponent },
+  { path: 'cliente/solicitar-cotizacion', component: RequestQuotationComponent },
+  { path: 'vendedor/dashboard', component: VendorDashboardComponent },
+  { path: 'index.html', redirectTo: '' },
+  { path: 'registro.html', redirectTo: 'registro' },
+  { path: 'recuperar-password.html', redirectTo: 'recuperar-password' },
+  { path: 'pages/admin/dashboard.html', redirectTo: 'admin/dashboard' },
+  { path: 'pages/admin/cotizaciones.html', redirectTo: 'admin/cotizaciones' },
+  { path: 'pages/admin/detalle-cotizacion.html', redirectTo: 'admin/cotizaciones/detalle' },
+  { path: 'pages/admin/usuarios.html', redirectTo: 'admin/usuarios' },
+  { path: 'pages/admin/editar-usuario.html', redirectTo: 'admin/usuarios/editar' },
+  { path: 'pages/admin/reportes.html', redirectTo: 'admin/reportes' },
+  { path: 'pages/Cliente/dashboard.html', redirectTo: 'cliente/dashboard' },
+  { path: 'pages/Cliente/mis-cotizaciones.html', redirectTo: 'cliente/mis-cotizaciones' },
+  { path: 'pages/Cliente/detalle-cotizacion.html', redirectTo: 'cliente/cotizaciones/detalle' },
+  { path: 'pages/Cliente/solicitar-cotizacion.html', redirectTo: 'cliente/solicitar-cotizacion' },
+  { path: 'pages/vendedor/dashboard.html', redirectTo: 'vendedor/dashboard' },
+  { path: '**', redirectTo: '' }
+];

@@ -4,3 +4,10 @@ __MACOSX/
 
 # hidden mac resource files
 ._*
+
+# Angular / Node generated files
+node_modules/
+dist/
+out-tsc/
+.angular/
+npm-debug.log*
