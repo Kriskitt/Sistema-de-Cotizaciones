@@ -68,7 +68,10 @@ export class LoginComponent {
       return;
     }
 
-    const role = this.data.authenticate(this.form.controls.email.value.trim(), this.form.controls.password.value.trim());
+    const role = this.data.authenticate(
+      this.form.controls.email.value.trim(),
+      this.form.controls.password.value
+    );
     this.loginError = !role;
     if (!role) {
       return;
