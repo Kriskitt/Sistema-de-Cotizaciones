@@ -57,8 +57,10 @@ import { RoleShellComponent } from '../../shared/role-shell.component';
       </section>
       <section class="section-card card-ui">
         <h2 class="section-title fs-2">Acciones Rápidas</h2>
-        <p class="section-subtitle mb-4">Accede rápidamente a las funciones principales</p>
-        <a class="btn btn-outline-dark px-5 py-4 fs-3" routerLink="/cliente/solicitar-cotizacion">
+        <p class="section-subtitle mb-4">Gestiona tus solicitudes de cotización de forma rápida y sencilla</p>
+        <a class="btn btn-outline-dark px-5 py-4 fs-3"
+          routerLink="/cliente/solicitar-cotizacion"
+          title="Solicitar una nueva cotización">
           <i class="bi bi-cart me-3"></i>Solicitar Cotización
         </a>
       </section>
