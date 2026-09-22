@@ -12,8 +12,8 @@ import { RoleShellComponent } from '../../shared/role-shell.component';
   template: `
     <app-role-shell [user]="data.userById('client-1')" [navItems]="nav" profileRoute="/cliente/dashboard">
       <div class="page-header">
-        <h1 class="page-title">Bienvenido, Juan Cliente</h1>
-        <p class="page-subtitle">Revisa tus cotizaciones y solicita nuevas</p>
+        <h1 class="page-title">Bienvenido al portal de cotizaciones</h1>
+        <p class="page-subtitle">Consulta tus cotizaciones y solicita nuevas propuestas</p>
       </div>
       <div class="row g-4 mb-4">
         @for (metric of metrics; track metric.title) {
