@@ -20,7 +20,12 @@ import { DemoDataService } from '../../services/demo-data.service';
           <form [formGroup]="form" (ngSubmit)="login()">
             <div class="mb-3">
               <label class="form-label">Correo Electrónico</label>
-              <input class="form-control" type="email" placeholder="usuario@ejemplo.com" formControlName="email">
+              <input
+                class="form-control"
+                type="email"
+                placeholder="usuario@ejemplo.com"
+                formControlName="email"
+                autocomplete="email">
               @if (form.controls.email.touched && form.controls.email.invalid) {
                 <div class="text-danger fw-bold mt-2">Ingresa un correo válido.</div>
               }
@@ -28,7 +33,12 @@ import { DemoDataService } from '../../services/demo-data.service';
 
             <div class="mb-4">
               <label class="form-label">Contraseña</label>
-              <input class="form-control" type="password" placeholder="••••••••" formControlName="password">
+              <input
+                class="form-control"
+                type="password"
+                placeholder="••••••••"
+                formControlName="password"
+                autocomplete="current-password">
               @if (form.controls.password.touched && form.controls.password.invalid) {
                 <div class="text-danger fw-bold mt-2">La contraseña es requerida.</div>
               }
@@ -68,7 +78,10 @@ export class LoginComponent {
       return;
     }
 
-    const role = this.data.authenticate(this.form.controls.email.value.trim(), this.form.controls.password.value.trim());
+    const role = this.data.authenticate(
+      this.form.controls.email.value.trim(),
+      this.form.controls.password.value
+    );
     this.loginError = !role;
     if (!role) {
       return;
